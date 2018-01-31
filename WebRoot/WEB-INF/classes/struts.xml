@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <!-- 修改字符编码 -->
+   <!--  <constant name="struts.i18n.encoding" value="GBK"/>
+     -->
+    <!-- struts框架中以包为单位管理资源，每个包要通过extends属性指定父包名 -->
+	<package name="mypkg" extends="struts-default">
+		<action name="login" class="com.sxt.struts.action.LoginAction">
+			<result name="success">/loginSuccess.jsp</result>
+			<result name="error">/loginFail.jsp</result>
+		</action>
+	</package>
+</struts>
